@@ -1,5 +1,6 @@
 package kuks.back.kuksmsa.controller;
 
+import kuks.back.kuksmsa.domain.HotelRoomType;
 import lombok.Getter;
 import lombok.ToString;
 import org.antlr.v4.runtime.misc.NotNull;

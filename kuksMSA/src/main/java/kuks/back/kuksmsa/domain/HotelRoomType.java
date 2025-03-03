@@ -1,4 +1,4 @@
-package kuks.back.kuksmsa.controller;
+package kuks.back.kuksmsa.domain;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;

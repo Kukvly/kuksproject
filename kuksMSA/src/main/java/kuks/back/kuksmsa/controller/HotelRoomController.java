@@ -1,5 +1,6 @@
 package kuks.back.kuksmsa.controller;
 
+import kuks.back.kuksmsa.domain.HotelRoomType;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,6 +19,9 @@ import java.util.Objects;
 
 @RestController
 public class HotelRoomController {
+    private static final String HEADER_CREATED_AT = "X-CREATED-AT";
+    private final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ssXXX");
+
     @GetMapping(path="/hotels/{hotelId}/rooms/{roomNumber}")
     public HotelRoomResponse getHotelRoomByPeriod(
             @PathVariable Long hotelId,
